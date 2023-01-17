@@ -1,5 +1,4 @@
 
-
 function Venda() 
 {
     return(
