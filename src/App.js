@@ -1,10 +1,22 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Navbar from './components/Navbar.js';
+import Contato from './pages/Contato';
+import Home from './pages/Home';
+import Sobre from './pages/Sobre';
+import Venda from './pages/Venda';
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <Router>
+      <Navbar/>
+      <Routes>
+        <Route exact path='/' element={<Home/>}/>
+        <Route exact path='/Venda' element={<Venda/>}/>
+        <Route exact path='/Sobre' element={<Sobre/>}/>
+        <Route exact path='/Contato' element={<Contato/>}/>
+      </Routes>
+    </Router>
   );
 }
 
