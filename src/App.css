@@ -218,3 +218,30 @@ header{
     font-style: italic;
     font-weight: 600;
 }
+/* fim Destaques */
+/* depoimentos */
+.depoimentos_main{
+    display: flex;
+}
+.depoimentos_main .w50:first-of-type{
+    background-color: rgb(48, 48, 48);
+}
+.depoimentos_main .w50:last-of-type{
+    background-color: #ee4444;
+}
+
+
+
+
+/* Footer */
+footer{
+    color: white;
+    background-color: rgb(48, 48, 48);
+}
+footer h1{
+    font-weight: 500;
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px 0;
+}

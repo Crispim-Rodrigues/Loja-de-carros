@@ -5,7 +5,7 @@ import Contato from './pages/Contato';
 import Home from './pages/Home';
 import Sobre from './pages/Sobre';
 import Venda from './pages/Venda';
-
+import Footer from './components/Footer';
 function App() {
   return (
     <Router>
@@ -16,6 +16,7 @@ function App() {
         <Route exact path='/Sobre' element={<Sobre/>}/>
         <Route exact path='/Contato' element={<Contato/>}/>
       </Routes>
+      <Footer/>
     </Router>
   );
 }
