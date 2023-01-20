@@ -20,26 +20,81 @@
 ul{
     list-style: none;
 }
+
+
+
+
 /* Nav bar */
-nav{
-    padding: 30px 0;
+header{
+    width: 100%;
+    position: relative;
 }
-nav ul{
+.nav-desktop{
+    padding: 30px 0;
+    background-color: white;
+}
+.nav-desktop ul{
     text-align: end;
 }
-nav ul li{
+.nav-desktop ul li{
     display: inline;
     padding: 0 2%;
     max-width: max-content;
 }
-nav ul li a{
+.nav-desktop ul li a{
     text-decoration: none;
     color: black;
     font-weight: 600;
     font-style: italic;
 }
-nav ul li:first-child a{
+.nav-desktop ul li:first-child a,
+.nav-mobile ul li:first-child a{
     color: #ee4444;
+}
+/* fim nav-desktop */
+/* nav mobile */
+.menu-mobile{
+    display: none;
+    
+}
+.GiHamburgerMenu{
+    cursor: pointer;
+    margin: 30px 0;
+    font-size: 30px;
+    margin-left: auto;
+}
+.nav-mobile{
+    text-align: center;
+    position: fixed;
+    top: 80px;
+    opacity: 0;
+    right: -110px;
+    z-index: 2;
+    background-color: white;
+    padding: 10px 20px;
+    transition: 0.5s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.515);
+}
+.nav-mobile ul li{
+    padding: 10px 0;
+}
+.nav-mobile ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+@media screen and (max-width: 600px) {
+    .nav-desktop{
+        display: none;
+    }
+    .menu-mobile{
+        display: flex;
+    }
+    .active-nav{
+        right: 0;
+        opacity: 1;
+        transition: 0.5 ease;
+    }
 }
 /* logo navbar */
 .box_image{
@@ -50,3 +105,52 @@ nav ul li:first-child a{
     height: 50px;
     top: 20px;
 }
+
+/* fim logo e nav bar */
+/* inicio do Home */
+.banner_main{
+    color: white;
+    background-image: url(./images/bg.jpg);
+    background-position-x: right;
+    background-size: 54vw;
+    background-repeat: no-repeat;
+    background-color: black;
+    height: 31.5vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.banner_main h2{
+    margin: 10px 0;
+    font-size: 1.9vw;
+    padding: 0 1.9vw;
+    width: max-content;
+    background-image: url('./images/box-text.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+
+}
+.banner_main h3{
+    font-size: 1.9vw;
+    padding: 0 1.9vw;
+    width: max-content;
+    color: black;
+    background-image: url('./images/box-white-text.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    margin-bottom: 5px;
+    margin-left: -0.4vw;
+}
+.banner_main h2:nth-child(1){
+    margin-left: 1.4vw;
+}
+.banner_main h2:nth-child(2){
+    margin-left: 1vw;
+}
+.banner_main h2:nth-child(3){
+    margin-left: 0.5vw;
+}
+/* Destaques */

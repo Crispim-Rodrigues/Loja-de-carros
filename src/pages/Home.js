@@ -1,9 +1,11 @@
-
+import Banner from "../components/Home-Components/Banner"
+import Destaques from "../components/Home-Components/Destaques"
 function Home() 
 {
     return(
         <main>
-            <h1>Ola Home</h1>
+            <Banner/>
+            <Destaques/>
         </main>
     )    
 }
